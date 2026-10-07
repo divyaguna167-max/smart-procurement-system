@@ -1,0 +1,416 @@
+/* ========================================
+   BUSINESS TYPE SELECTION PAGE
+======================================== */
+
+.business-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fafc 0%,
+      #eef2ff 50%,
+      #f8fafc 100%
+    );
+
+  font-family: Arial, sans-serif;
+}
+
+
+.business-container {
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+.business-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 55px;
+}
+
+.business-logo {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4f46e5,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  box-shadow:
+    0 8px 20px
+    rgba(79, 70, 229, 0.25);
+}
+
+.business-brand h2 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 21px;
+}
+
+.business-brand p {
+  margin: 3px 0 0;
+
+  color: #64748b;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.business-header {
+  text-align: center;
+
+  max-width: 650px;
+
+  margin: 0 auto 45px;
+}
+
+.business-step {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  margin-bottom: 15px;
+
+  border-radius: 20px;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+.business-header h1 {
+  margin: 0 0 15px;
+
+  color: #1e293b;
+
+  font-size: 38px;
+}
+
+.business-header p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   BUSINESS GRID
+======================================== */
+
+.business-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+
+  max-width: 900px;
+
+  margin: auto;
+}
+
+
+/* ========================================
+   BUSINESS CARD
+======================================== */
+
+.business-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  width: 100%;
+
+  padding: 22px;
+
+  text-align: left;
+
+  background: white;
+
+  border:
+    1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  transition:
+    0.25s ease;
+
+  box-shadow:
+    0 4px 15px
+    rgba(15, 23, 42, 0.04);
+}
+
+.business-card:hover {
+  transform:
+    translateY(-3px);
+
+  border-color:
+    #a5b4fc;
+
+  box-shadow:
+    0 12px 25px
+    rgba(79, 70, 229, 0.12);
+}
+
+
+/* SELECTED CARD */
+
+.selected-business {
+  border:
+    2px solid #4f46e5;
+
+  background:
+    #f8f9ff;
+
+  box-shadow:
+    0 12px 30px
+    rgba(79, 70, 229, 0.15);
+}
+
+
+/* ========================================
+   BUSINESS ICON
+======================================== */
+
+.business-icon {
+  width: 56px;
+  height: 56px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  font-size: 25px;
+
+  background:
+    #eef2ff;
+}
+
+
+/* ========================================
+   BUSINESS INFO
+======================================== */
+
+.business-info h3 {
+  margin: 0 0 6px;
+
+  color: #1e293b;
+
+  font-size: 16px;
+}
+
+.business-info p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   CHECK ICON
+======================================== */
+
+.business-check {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    #4f46e5;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+
+/* ========================================
+   CONTINUE BUTTON
+======================================== */
+
+.business-action {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 35px;
+}
+
+.business-continue {
+  min-width: 260px;
+
+  height: 52px;
+
+  padding: 0 25px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4f46e5,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  transition:
+    0.25s;
+
+  box-shadow:
+    0 10px 25px
+    rgba(79, 70, 229, 0.25);
+}
+
+.business-continue:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 14px 30px
+    rgba(79, 70, 229, 0.35);
+}
+
+
+/* ========================================
+   NOTE
+======================================== */
+
+.business-note {
+  text-align: center;
+
+  margin-top: 18px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .business-page {
+    padding: 25px 15px;
+  }
+
+  .business-brand {
+    margin-bottom: 40px;
+  }
+
+  .business-header h1 {
+    font-size: 30px;
+  }
+
+  .business-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .business-card {
+    padding: 18px;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .business-header h1 {
+    font-size: 26px;
+  }
+
+  .business-icon {
+    width: 48px;
+    height: 48px;
+
+    font-size: 21px;
+  }
+
+  .business-info h3 {
+    font-size: 14px;
+  }
+
+}
