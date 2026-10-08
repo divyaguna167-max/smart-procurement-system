@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { useData } from "./DataContext";
 import "./AIInsights.css";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL =
+  process.env.REACT_APP_API_URL ||
+  "http://127.0.0.1:5000";
 
 function AIInsights() {
   const navigate = useNavigate();
@@ -499,7 +501,6 @@ function AIInsights() {
 
       </div>
 
-
       {/* SUMMARY */}
 
       <div className="ai-summary-grid">
@@ -516,7 +517,6 @@ function AIInsights() {
           </div>
         </div>
 
-
         <div className="ai-summary-card">
           <div className="ai-summary-icon orange">
             ⚠
@@ -528,7 +528,6 @@ function AIInsights() {
             <small>Need attention</small>
           </div>
         </div>
-
 
         <div className="ai-summary-card">
           <div className="ai-summary-icon red">
@@ -544,7 +543,6 @@ function AIInsights() {
           </div>
         </div>
 
-
         <div className="ai-summary-card">
           <div className="ai-summary-icon green">
             ✓
@@ -558,7 +556,6 @@ function AIInsights() {
         </div>
 
       </div>
-
 
       {/* AI ENGINE */}
 
@@ -593,7 +590,6 @@ function AIInsights() {
 
       </div>
 
-
       {/* HIGH DEMAND */}
 
       <section className="ai-section">
@@ -620,7 +616,6 @@ function AIInsights() {
           </div>
 
         </div>
-
 
         <div className="high-demand-grid">
 
@@ -683,7 +678,6 @@ function AIInsights() {
 
       </section>
 
-
       {/* SMART PROCUREMENT */}
 
       <section className="ai-section">
@@ -714,7 +708,6 @@ function AIInsights() {
           </div>
 
         </div>
-
 
         <div className="recommendations-grid">
 
@@ -767,7 +760,6 @@ function AIInsights() {
 
                   </div>
 
-
                   {/* MARKET */}
 
                   <div className="market-info">
@@ -792,7 +784,6 @@ function AIInsights() {
 
                   </div>
 
-
                   {/* DETAILS */}
 
                   <div className="recommendation-details">
@@ -809,7 +800,6 @@ function AIInsights() {
                       </strong>
                     </div>
 
-
                     <div className="recommendation-detail">
                       <span>Purchase</span>
 
@@ -817,7 +807,6 @@ function AIInsights() {
                         +{item.recommendedPurchase}
                       </strong>
                     </div>
-
 
                     <div className="recommendation-detail">
                       <span>Priority</span>
@@ -832,7 +821,6 @@ function AIInsights() {
                     </div>
 
                   </div>
-
 
                   {/* BUTTON */}
 
@@ -875,7 +863,6 @@ function AIInsights() {
         </div>
 
       </section>
-
 
       {/* HOW AI WORKS */}
 
